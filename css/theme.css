@@ -1,0 +1,156 @@
+/*
+* {
+    border: solid 1px red;
+}
+*/
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navbar a {
+  text-transform: uppercase;
+}
+
+a {
+  color: #9b9a9a;
+  transition: all .3s;
+}
+
+a:hover,
+a:focus {
+  color: #10b205;
+  text-decoration: none;
+}
+
+
+header {
+  background: #2C2D2D;
+  color: #9b9a9a;
+  padding: 10px 0 0;
+  font-size: 1.1em;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: 5px;
+}
+.header-top i {
+  color: #9b9a9a;
+  transition: all .3s;
+}
+
+.header-top i:hover {
+  color: #fff;
+}
+
+.header-top ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top li {
+  margin-right: 30px;
+}
+
+.header-top li:last-child {
+  margin: 0;
+}
+
+.header-main {
+  background-color: #fff;
+  position: relative;
+  top: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.nav-link {
+  font-weight: bold;
+  color: #2C2D2D;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #10b205;
+}
+
+main {
+  margin-top: 42px;
+}
+
+.gallery-img {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #2C2D2D;
+  color: #9b9a9a;
+  padding: 10px 0;
+}
+
+footer h2 {
+  color: #fff;
+}
+
+.footer2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer2 li {
+  padding: 2px 0;
+}
+
+.section {
+  padding: 40px 10px;
+}
+
+.section h1{
+  font-weight: bold;
+}
+
+/* Fix mobile navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .nav-item {
+    margin: 0;
+  }
+}
+
+/* iPad and larger screens */
+@media (min-width: 768px) {
+  .header-top {
+    justify-content: flex-end;
+  }
+  .header-top ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .navbar .nav-item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .footer2 ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer2 ul li {
+    flex-basis: 50%;
+  }
+}
+
+/* Fix header size on large devices */
+@media (min-width: 992px) {
+  header {
+    height: 100px;
+  }
+}

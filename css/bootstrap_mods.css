@@ -1,0 +1,56 @@
+.btn a {
+  color: #10b205;
+}
+
+.btn-outline-primary {
+  color: #10b205;
+  border-color: #10b205;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  border-color: #10b205;
+  background-color: #10b205;
+}
+
+.navbar-toggler-right {
+  top: 22px;
+  right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+  color: #2C2D2D;
+  animation: all .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #10b205;
+}
+
+.card-deck {
+  justify-content: center;
+}
+
+.card {
+  border: none;
+}
+
+.card-deck .card {
+  margin: 15px 15px!important;
+  flex: 0 0 250px;
+}
+
+@media only screen
+  and (device-width: 768px)
+  and (orientation: portrait) {
+    .card-deck .card {
+      flex: 0 0 203px;
+    }
+}
+
+.card-primary {
+  background-color: #2C2D2D;
+  border-color: #2C2D2D;
+}
