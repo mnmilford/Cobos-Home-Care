@@ -91,6 +91,8 @@ footer {
   background-color: #2C2D2D;
   color: #9b9a9a;
   padding: 10px 0;
+  outline: 2px dashed #9b9a9a;
+  outline-offset: -4px;
 }
 
 footer h2 {
