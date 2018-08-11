@@ -8,6 +8,13 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+main {
+  background: #fdfdfd;
+}
+
+nav {
+  background: #fdfdfd;
+}
 .navbar a {
   text-transform: uppercase;
 }
@@ -23,8 +30,27 @@ a:focus {
   text-decoration: none;
 }
 
+.card {
+  border-radius: 0;
+}
+
+.hr1 {
+  position: relative;
+  margin: 0;
+  top: -4px;
+  border-top: 2px dashed #2C2D2D;
+}
+
+.hr2 {
+  position: relative;
+  margin: 0;
+  top: 4px;
+  border-top: 2px dashed #9b9a9a;
+}
+
 header {
   background: #10b205;
+  background: #02912b;
   padding: 10px 0 0;
   font-size: 1.1em;
 }
@@ -35,6 +61,7 @@ header {
   align-items: flex-end;
   position: relative;
   top: 5px;
+  font-weight: bold;
 }
 .header-top i {
   color: #2C2D2D;
@@ -61,6 +88,7 @@ header {
   position: relative;
   top: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  z-index: 1;
 }
 
 .nav-link {
@@ -85,8 +113,6 @@ footer {
   background-color: #2C2D2D;
   color: #9b9a9a;
   padding: 10px 0;
-  outline: 2px dashed #9b9a9a;
-  outline-offset: -4px;
 }
 
 footer h2 {
@@ -104,7 +130,7 @@ footer h2 {
 }
 
 .section {
-  padding: 40px 10px;
+  padding: 60px 10px;
 }
 
 .section h1{
