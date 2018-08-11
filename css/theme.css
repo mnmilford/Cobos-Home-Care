@@ -13,20 +13,18 @@ body {
 }
 
 a {
-  color: #9b9a9a;
+  color: #2C2D2D;
   transition: all .3s;
 }
 
 a:hover,
 a:focus {
-  color: #10b205;
+  color: #fff;
   text-decoration: none;
 }
 
-
 header {
-  background: #2C2D2D;
-  color: #9b9a9a;
+  background: #10b205;
   padding: 10px 0 0;
   font-size: 1.1em;
 }
@@ -39,7 +37,7 @@ header {
   top: 5px;
 }
 .header-top i {
-  color: #9b9a9a;
+  color: #2C2D2D;
   transition: all .3s;
 }
 
@@ -52,10 +50,6 @@ header {
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-.header-top li {
-  margin-right: 30px;
 }
 
 .header-top li:last-child {
@@ -133,6 +127,9 @@ footer h2 {
   .header-top {
     justify-content: flex-end;
   }
+  .header-top li {
+    margin-right: 30px;
+  }
   .header-top ul {
     display: flex;
     justify-content: flex-end;
@@ -140,6 +137,9 @@ footer h2 {
   }
   .navbar .nav-item:not(:last-child) {
     margin-right: 15px;
+  }
+  .card-deck {
+    max-width: 70%;
   }
   .footer2 ul {
     display: flex;
@@ -154,5 +154,12 @@ footer h2 {
 @media (min-width: 992px) {
   header {
     height: 100px;
+  }
+
+/* Fix header on xl devices */
+@media screen and (min-width: 1921px) {
+    .header-main {
+      max-width: 50%;
+    }
   }
 }
